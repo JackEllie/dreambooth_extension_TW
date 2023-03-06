@@ -239,7 +239,7 @@ function db_start(numArgs, save, startProgress, args) {
 }
 
 function db_start_sample() {
-    return db_start(12, false, true, arguments);
+    return db_start(18, false, true, arguments);
 }
 
 function db_start_crop() {
@@ -331,7 +331,7 @@ let db_titles = {
     "創建模型": "創建一個新模型。",
     "創建": "已經創建了模型。",
     "自定義模型名稱": "保存 .ckpt 和 .pt 文件時使用的自定義名稱。子目錄也將以此命名。",
-    "圖像數據目錄": "包含訓練圖像的目錄。",
+    "實例圖像數據目錄": "包含訓練圖像的目錄。",
     "除錯": "檢查實例和類圖像並報告沒有相應類圖像的任何實例圖像。",
     "Discord Webhook": "生成後將訓練樣本發送到 Discord 頻道。",
     "Existing Prompt Contents": "如果使用 [filewords]，這將告訴字符串生成器現有提示的格式。",
@@ -346,7 +346,8 @@ let db_titles = {
     "產生樣本": "在下一個訓練週期後生成樣本。",
     "在訓練期間保存時生成 .ckpt 文件。": "啟用後，將在訓練進行時以指定的訓練週期生成CKPT。這也可以在訓練進行時使用“保存權重”按鈕控製手動生成。",
     "在訓練完成時生成 .ckpt 文件。": "啟用後，訓練成功完成後將生成一個CKPT。",
-    "在訓練取消時生成 .ckpt 文件。": "啟用後，當用戶取消訓練時將生成一個CKPT。",
+    "在訓練取消時生成 .ckpt 文件。": "啟用後，當用戶取消訓練時將生成一個CKPT。",    
+    "生成附加網路的LoRA。(警告:如有使用LoRA擴充功能，此選項無效)": "啟用後，將在models\Lora目錄生成相容的lora.safetensors模型。與[lora擴充]不相容。",
     "在訓練期間保存時生成 lora。": "啟用後，將在訓練期間在每個指定的訓練週期生成 lora .pt 文件。這也會影響手動點擊“保存權重”按鈕時是否生成 .pt 文件。",
     "在訓練完成時生成 lora。": "啟用後，訓練完成後將生成 lora .pt 文件。",
     "在訓練取消時生成 lora。": "啟用後，當用戶取消訓練時，將生成 lora .pt 文件。",
